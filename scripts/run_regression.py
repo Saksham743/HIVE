@@ -35,6 +35,10 @@ TEST_SUITES = [
         "Startup Recovery Integration",
         "backend.tests.test_startup_recovery_integration_manual",
     ),
+    (
+        "Research Database",
+        "backend.tests.test_research_database_manual",
+    ),
 ]
 
 

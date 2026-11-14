@@ -34,7 +34,10 @@ SessionLocal = sessionmaker(
 
 def init_db() -> None:
     """Create database tables that do not already exist."""
-    import backend.app.database.models  # Register models
+
+    # Register all database models.
+    import backend.app.database.models
+    import backend.app.database.research_models
 
     settings.ensure_directories()
     Base.metadata.create_all(bind=engine)

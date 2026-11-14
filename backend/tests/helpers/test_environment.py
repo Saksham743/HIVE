@@ -10,6 +10,7 @@ from sqlalchemy.orm import sessionmaker
 from backend.app.config import settings
 from backend.app.database.base import Base
 from backend.app.database import models  # noqa: F401
+from backend.app.database import research_models  # noqa: F401
 
 
 class ManualTestEnvironment:
